@@ -1,0 +1,133 @@
+:root {
+    --cel: #75AADB;
+    --cel-d: #3F7FB8;
+    --sol: #F6B40E;
+    --bg: #0A2A4D;
+    --ink: #EAF4FC;
+    --card: #12396A;
+    --mut: #A9C7E4;
+    box-sizing: border-box;
+
+}
+
+.bandera{
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 1.05rem/1.6 "Work Sans", system-ui, sans-serif
+}
+
+h1,
+h2 {
+    font-family: "Bowlby One", Impact, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 4rem 1.2rem 5rem;
+    color: #0F2A44;
+    background: repeating-linear-gradient(90deg, var(--cel) 0 12.5%, #fff 12.5% 25%)
+}
+
+.sun {
+    position: absolute;
+    left: 50%;
+    top: -140px;
+    width: 420px;
+    height: 420px;
+    margin-left: -210px;
+    opacity: .9;
+    animation: spin 90s linear infinite
+}
+
+
+
+.hero h1 {
+    position: relative;
+    font-size: clamp(3rem, 13vw, 8rem);
+    letter-spacing: -.02em;
+    background: #fff;
+    display: inline-block;
+    padding: .1em .3em;
+    border: 5px solid #0F2A44;
+    box-shadow: 8px 8px 0 var(--sol);
+    margin-top: 7rem
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3rem 1.2rem
+}
+
+h2 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin-bottom: 1.2rem;
+    color: var(--cel)
+}
+
+
+.line {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1.4rem;
+    border-left: 6px solid var(--cel)
+}
+
+.line li {
+    position: relative;
+    margin-bottom: 1.6rem
+}
+
+
+.grito {
+    background: var(--card);
+    border: 3px solid var(--ink);
+    border-radius: 10px;
+    padding: 1.6rem;
+    text-align: center
+}
+
+button {
+    font: 600 1rem "Work Sans", sans-serif;
+    cursor: pointer;
+    background: var(--cel);
+    color: #0F2A44;
+    border: 3px solid #0F2A44;
+    border-radius: 8px;
+    padding: .7rem 1.3rem;
+    box-shadow: 4px 4px 0 var(--sol);
+    transition: transform .08s, box-shadow .08s
+}
+
+form {
+    display: grid;
+    gap: .7rem;
+    margin-bottom: 1.4rem
+}
+
+input,
+textarea {
+    font: inherit;
+    padding: .7rem;
+    border: 3px solid var(--ink);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--ink);
+    width: 100%
+}
+
+
+.foto {
+    text-align: center;
+}
